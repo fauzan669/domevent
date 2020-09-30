@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="belajar dom event" />
+    <title>Domevent</title>
+  </head>
+  <body>
+    <div class="modalMenu" id="modalMenu">
+      <span class="material-icons closeicon" onclick="closeModal()">close</span>
+
+      <a href="#Home" onclick="closeModal()">Home</a>
+      <a href="#About" onclick="closeModal()">About</a>
+      <a href="#Showcase" onclick="closeModal()">Showcase</a>
+      <a href="#Contact" onclick="closeModal()">Contact</a>
+    </div>
+
+    <nav class="navbar">
+      <h1 class="brand">CYP Store</h1>
+      <span class="material-icons menuicon" onclick="showModal()">menu</span>
+    </nav>
+
+    <main class="container" id="Home">
+      <section class="Home" id="Home">
+        <img
+          src="https://images.pexels.com/photos/2659177/pexels-photo-2659177.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="ini orang"
+          class="Homeimage"
+        />
+
+        <h1 class="homeText">WEB PROFILE CYP</h1>
+      </section>
+
+      <section class="About" id="About">
+        <span class="alertAbout">Selamat datang di website saya</span>
+        <h1 class="title">about</h1>
+      </section>
+
+      <section class="Showcase" id="Showcase">
+        <span class="material-icons rotateIcons"> track_changes </span>
+      </section>
+
+      <section class="Contact" id="Contact">
+        <h1 class="title">Contact</h1>
+      </section>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

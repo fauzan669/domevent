@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: beige;
+  font-family: "Amatic SC", cursive;
+}
+
+.navbar {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 10%;
+  background-color: #bebebe;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.brand {
+  color: whitesmoke;
+  font-family: "Lobster", cursive;
+}
+.menuicon {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.modalMenu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.closeicon {
+  color: orange;
+  font-size: 2rem;
+  position: absolute;
+  top: 15vh;
+  right: 10%;
+}
+
+.closeicon:hover {
+  color: orangered;
+  cursor: pointer;
+}
+
+.modalMenu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.modalMenu a:hover {
+  color: orange;
+  font-size: 2.4rem;
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+}
+
+.container section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home {
+  background-size: cover;
+  /* background-image: url(https://picsum.photos/seed/50/1000); */
+  background-color: dimgrey;
+  background-attachment: fixed;
+  gap: 40px;
+}
+
+.Homeimage {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 500px;
+  border: 12px solid black;
+  animation-name: bottomToTop;
+  animation-duration: 3s;
+  animation-iteration-count: 4;
+}
+
+.homeText {
+  font-size: 7rem;
+  color: blanchedalmond;
+  animation-name: bottomToTop;
+  animation-duration: 3s;
+  animation-iteration-count: 6;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+.About {
+  background-size: cover;
+  background-image: url(https://picsum.photos/seed/50/1000);
+  background-attachment: fixed;
+  flex-direction: column;
+  justify-content: flex-start !important;
+}
+
+.Showcase {
+  background-size: cover;
+  background-image: url(https://picsum.photos/seed/400/1000);
+  background-attachment: fixed;
+}
+
+.rotateIcons {
+  font-size: 5rem;
+  animation: rotate;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+}
+.Contact {
+  background-size: cover;
+  background-image: url(https://picsum.photos/seed/400/1000);
+  background-attachment: fixed;
+}
+
+.alertAbout {
+  width: 100vw;
+  height: 8vh;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 10vh;
+}
+
+@keyframes bottomToTop {
+  from {
+    transform: translateY(20vh);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0vh);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
